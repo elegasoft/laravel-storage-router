@@ -1,0 +1,31 @@
+{
+    "name": "elegasoft/laravel-storage-route",
+    "description": "Provides a route to handle the storage path as an alternative to the default Laravel symlink",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jason Cook",
+            "email": "jason@elegasoft.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Elegasoft\\LaravelStorageRoute\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Elegasoft\\LaravelStorageRoute\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Elegasoft\\LaravelStorageRoute\\Providers\\StorageRouterServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.3"
+    }
+}
